@@ -1,0 +1,78 @@
+# 📊 Crypto Trading Report Generator
+
+This project automates the creation of a **crypto trading analysis report** from a CSV dataset using Python and Excel in **Google Colab**. It includes summary statistics, visualizations, and exports the results to a downloadable `.xlsx` file.
+
+---
+
+## 🚀 Features
+
+- Upload a CSV file directly in Colab
+- Compute trading metrics like:
+  - Total volume
+  - Value traded
+  - Average daily return
+  - Per-symbol performance stats
+- Generate visualizations:
+  - 📈 Price trends per symbol
+  - 📊 Total trading volume by symbol
+- Export everything into a multi-sheet **Excel report** with embedded charts
+
+---
+
+## 📁 Input File Format
+
+Your CSV file should be named something like `CRYPTO_DUMMY_REPORT.csv` and include the following columns:
+
+| date       | symbol | price | volume | returns |
+|------------|--------|-------|--------|---------|
+| 2025-06-10 | BTC    | 65000 | 2      | 0.015   |
+
+---
+
+## ✅ How to Use in Colab
+
+1. Open the notebook in [Google Colab](https://colab.research.google.com)
+2. Run the first cell to install dependencies:
+    ```python
+    !pip install xlsxwriter
+    ```
+3. Run the script and upload your CSV file when prompted.
+4. The report will be automatically generated and downloaded.
+
+---
+
+## 📦 Output
+
+The final Excel report contains:
+- **Summary**: Key metrics across the dataset
+- **Crypto Stats**: Grouped analytics per symbol
+- **Charts**: Price trend and volume charts (embedded in Excel)
+
+---
+
+## ⚙️ Dependencies
+
+- `pandas`
+- `numpy`
+- `matplotlib`
+- `xlsxwriter`
+- `google.colab` (for file uploads & downloads)
+
+---
+
+## 📬 Output Example
+
+A file named `CRYPTO_TRADING_REPORT.xlsx` will be automatically downloaded to your device after generation.
+
+---
+
+## 🧠 Author Notes
+
+- Ensure your input CSV contains realistic crypto data
+- This tool is great for portfolio analytics or strategy performance summaries
+
+---
+
+## 🛠️ License
+
+MIT License – free to use and modify.
